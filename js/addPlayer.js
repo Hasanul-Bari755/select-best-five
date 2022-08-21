@@ -15,6 +15,7 @@ function display(arr){
      `;
      addPlase.appendChild(ol);
    }
+  
 } 
 
 function addToplayer(element){
@@ -27,5 +28,7 @@ function addToplayer(element){
     playerArray.push(playerObj);
     display(playerArray);
 
-   
+    element.setAttribute("disabled", "disabled");
+  
 }
+
