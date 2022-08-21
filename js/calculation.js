@@ -1,6 +1,6 @@
-document.getElementById('calculate'),addEventListener('click',function(){
+document.getElementById('calculate-btn').addEventListener('click',function(){
     if(isNaN(getInputValueById('player'))){
-        
+        alert('Please valid Input')
         return;
     }
     const totalPlayerCostValue = totalPlayerCost();
@@ -17,6 +17,9 @@ document.getElementById('total-calculate').addEventListener('click',function(){
     }
     
     const totalPlayerExpence = totalPlayerCost();
+    if(isNaN(totalPlayerExpence)){
+        return;
+    }
     const totalCost = managerCost + coachCost + totalPlayerExpence;
     setTextValueById('total',totalCost)
     
