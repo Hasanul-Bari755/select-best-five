@@ -4,13 +4,16 @@ function display(arr){
     const addPlase= document.getElementById('addPlayer');
     addPlase.innerHTML = "";
    for(let i = 0; i<arr.length; i++){
-      const playerName = arr[i].playerName;
-      const ol = document.createElement('ol');
+     if(i === 5){
+        break;
+     }
+     const playerName = arr[i].playerName;
+     const ol = document.createElement('ol');
 
-      ol.innerHTML = `
-      <li>${i+1}. ${playerName}</li>
-      `;
-      addPlase.appendChild(ol);
+     ol.innerHTML = `
+     <li class="text-2xl">${i+1}. ${playerName}</li>
+     `;
+     addPlase.appendChild(ol);
    }
 } 
 
@@ -23,5 +26,6 @@ function addToplayer(element){
    
     playerArray.push(playerObj);
     display(playerArray);
-    
+
+   
 }
