@@ -1,6 +1,7 @@
 const playerArray = [];
 
 function display(arr){
+    
     const addPlase= document.getElementById('addPlayer');
     addPlase.innerHTML = "";
    for(let i = 0; i<arr.length; i++){

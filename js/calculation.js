@@ -11,7 +11,7 @@ document.getElementById('total-calculate').addEventListener('click',function(){
    
     const managerCost = getInputValueById('manager');
     const coachCost = getInputValueById('coach');
-    if(isNaN(managerCost || coachCost || totalPlayerCost())){
+    if(isNaN(managerCost && coachCost && totalPlayerCost())){
         alert('Please valid input');
         return;
     }
