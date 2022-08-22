@@ -25,12 +25,3 @@ function totalPlayerCost(){
     
 }
 
-// function inputField(){
-//     const player = getInputValueById('player');
-//     const manager = getInputValueById('manager');
-//     const coach = getInputValueById('coach');
-//     if(isNaN(player || manager || coach)){
-//         alert('Please input value');
-//         return;
-//     }
-// }

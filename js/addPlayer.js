@@ -1,7 +1,9 @@
 const playerArray = [];
 
 function display(arr){
-    
+    if(arr.length > 5){
+        arr.pop();
+    }
     const addPlase= document.getElementById('addPlayer');
     addPlase.innerHTML = "";
    for(let i = 0; i<arr.length; i++){
@@ -27,6 +29,7 @@ function addToplayer(element){
     }
    
     playerArray.push(playerObj);
+   
     display(playerArray);
 
     element.setAttribute("disabled", "disabled");
