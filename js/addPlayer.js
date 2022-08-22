@@ -8,7 +8,7 @@ function display(arr){
     addPlase.innerHTML = "";
    for(let i = 0; i<arr.length; i++){
      if(i === 5){
-        break;
+         break;
      }
      const playerName = arr[i].playerName;
      const ol = document.createElement('ol');
@@ -29,6 +29,11 @@ function addToplayer(element){
     }
    
     playerArray.push(playerObj);
+    if(playerArray.length > 5){
+        alert("Do not add more then five items")
+        
+        
+    }
    
     display(playerArray);
 
